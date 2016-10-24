@@ -1,26 +1,26 @@
 {
   "name": "template-node",
   "version": "0.0.1",
-  "description": "A template project for Twilio projects developed in Node",
+  "description": "Conference Dialing TwiML server app",
   "main": "app.js",
   "scripts": {
     "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/TwilioDevEd/template-node.git"
+    "url": "git:https://github.com/abhijitmehta/confDynRooms.git"
   },
   "keywords": [
     "twilio",
     "node",
     "template"
   ],
-  "author": "Kevin Whinnery",
+  "author": "Abhijit Mehta",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/TwilioDevEd/template-node/issues"
+    "url": "https://github.com/abhijitmehta/confDynRooms/issues"
   },
-  "homepage": "https://github.com/TwilioDevEd/template-node",
+  "homepage": "https://github.com/abhijitmehta/confDynRooms",
   "dependencies": {
     "twilio": "^3.0.0-rc.13",
     "express": "^4.5.1",
@@ -29,6 +29,8 @@
   "devDependencies": {
     "mocha": "^1.20.1",
     "chai": "^1.9.1",
-    "request": "^2.37.0"
+    "request": "^2.37.0",
+     "body-parser": "~1.10.1"
+
   }
 }
