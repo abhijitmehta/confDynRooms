@@ -1,0 +1,7 @@
+{
+  "name": "Twilio Conference",
+  "description": "Server App to generate TwiMl to Dial into Dynamically Created conference room based on user input ",
+  "repository": "https://github.com/abhijitmehta/confDynRooms.git",
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "keywords": ["node", "express", "static","twilio","conference"]
+}
