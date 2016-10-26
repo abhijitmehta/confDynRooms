@@ -2,8 +2,8 @@
   "name": "conf-Dyn",
   "version": "0.0.1",
   "description": "Conference Dialing TwiML server app",
-  "main": "app.js"
-  },
+  "main": "app.js",
+  "scripts": {"start": "node app.js"},
   "repository": {
     "type": "git",
     "url": "git:https://github.com/abhijitmehta/confDynRooms.git"
