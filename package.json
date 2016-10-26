@@ -22,7 +22,9 @@
   "dependencies": {
     "twilio": "^3.0.0-rc.13",
     "express": "^4.5.1",
-    "morgan": "^1.1.1"
+    "morgan": "^1.1.1",
+    "request": "^2.37.0",
+     "body-parser": "~1.10.1"
   },
   "devDependencies": {
 
