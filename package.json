@@ -1,10 +1,8 @@
 {
-  "name": "template-node",
+  "name": "conf-Dyn",
   "version": "0.0.1",
   "description": "Conference Dialing TwiML server app",
-  "main": "app.js",
-  "scripts": {
-    "test": "mocha"
+  "main": "app.js"
   },
   "repository": {
     "type": "git",
@@ -13,7 +11,7 @@
   "keywords": [
     "twilio",
     "node",
-    "template"
+    "conference"
   ],
   "author": "Abhijit Mehta",
   "license": "MIT",
@@ -27,8 +25,7 @@
     "morgan": "^1.1.1"
   },
   "devDependencies": {
-    "mocha": "^1.20.1",
-    "chai": "^1.9.1",
+
     "request": "^2.37.0",
      "body-parser": "~1.10.1"
 
