@@ -11,6 +11,34 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Configure routes and middleware for the application
 require('./routes')(app);
 
+app.get('/welcomeMessage',
+         function(i_Req,o_Res)
+           {
+
+               var ivrTwimlResp = new twilio.TwimlResponse();
+               var owner=i_Req.query.owner;
+               var actionUrl="/dialConf?owner="+owner;
+               //console.log(i_Req);
+               ivrTwimlResp.gather(
+                                   {
+                                        action:actionUrl,
+                                        numDigits:'5',
+                                        timeout : '5'
+                                   },
+                                   function()
+                                      {
+                                            this.pause({length:1})
+                                                .say("Welcome to this conference hosted by " +  owner )
+                                                .say("Please enter the Conference RoomID provided to you by " +  owner );
+
+                                      }
+                                 ) ;
+               ivrTwimlResp.say("You have not entered any option.Please enter the Conference RoomID provided to you by "+owner).redirect( { method : 'GET' } );
+
+               o_Res.set('Content-Type','text/xml');
+               o_Res.send(ivrTwimlResp.toString());
+           }
+       );
 
 
 app.post('/dialConf',
